@@ -449,10 +449,7 @@
         class="bg-gradient-to-b from-gray-700 to-gray-900 rounded-2xl p-8 flex justify-center items-center shadow-2xl w-[90%] max-w-md border border-gray-600"
       >
         <button
-          @click="
-            startSet()
-            showStartButton = false
-          "
+          @click="(startSet(), (showStartButton = false))"
           class="bg-gradient-to-r from-blue-500 to-blue-600 w-full min-w-[240px] sm:min-w-[320px] text-white px-8 py-4 rounded-full text-xl font-bold shadow-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-200 hover:scale-105 whitespace-nowrap"
         >
           1세트 시작
