@@ -2,7 +2,10 @@
   <div
     v-if="game && user1 && user2"
     class="w-dvw h-dvh flex flex-col px-4 relative bg-gray-900 text-gray-100 overflow-hidden"
-    style="padding-top: clamp(0.5rem, 1.5vh, 0.75rem); padding-bottom: clamp(0.5rem, 1.5vh, 0.75rem)"
+    style="
+      padding-top: clamp(0.5rem, 1.5vh, 0.75rem);
+      padding-bottom: clamp(0.5rem, 1.5vh, 0.75rem);
+    "
   >
     <!-- Reconnecting Overlay -->
     <div
@@ -42,7 +45,10 @@
         <div class="flex w-full" style="gap: clamp(0.25rem, 0.5vw, 0.5rem)">
           <div
             class="flex-1 flex flex-col justify-center bg-gradient-to-br from-gray-700 to-gray-800 text-white rounded-xl text-center shadow-lg border border-gray-600"
-            style="min-height: 60px; padding: clamp(0.5rem, 1.5vh, 0.625rem) clamp(0.375rem, 1.5vw, 0.5rem)"
+            style="
+              min-height: 60px;
+              padding: clamp(0.5rem, 1.5vh, 0.625rem) clamp(0.375rem, 1.5vw, 0.5rem);
+            "
           >
             <div class="flex flex-col items-center justify-center gap-1">
               <div
@@ -72,10 +78,16 @@
           </div>
           <div
             class="flex-1 flex flex-col justify-center bg-gradient-to-br from-gray-700 to-gray-800 text-white rounded-xl text-center shadow-lg border border-gray-600"
-            style="min-height: 60px; padding: clamp(0.5rem, 1.5vh, 0.625rem) clamp(0.375rem, 1.5vw, 0.5rem)"
+            style="
+              min-height: 60px;
+              padding: clamp(0.5rem, 1.5vh, 0.625rem) clamp(0.375rem, 1.5vw, 0.5rem);
+            "
           >
             <div class="flex flex-col items-center justify-center gap-1">
-              <div class="flex items-center justify-center font-semibold" style="font-size: clamp(0.65rem, 1.3vh, 0.75rem)">
+              <div
+                class="flex items-center justify-center font-semibold"
+                style="font-size: clamp(0.65rem, 1.3vh, 0.75rem)"
+              >
                 <svg
                   style="width: clamp(13px, 3.5vw, 15px); height: clamp(13px, 3.5vw, 15px)"
                   viewBox="0 0 100 100"
@@ -89,17 +101,26 @@
                 </svg>
                 <span class="ml-1 text-gray-100 font-semibold">세트 수</span>
               </div>
-              <div class="flex items-center justify-center text-orange-400 font-extrabold" style="font-size: clamp(0.75rem, 1.6vh, 0.9rem)">
+              <div
+                class="flex items-center justify-center text-orange-400 font-extrabold"
+                style="font-size: clamp(0.75rem, 1.6vh, 0.9rem)"
+              >
                 {{ game.rule.setsToWin }}
               </div>
             </div>
           </div>
           <div
             class="flex-1 flex flex-col justify-center bg-gradient-to-br from-gray-700 to-gray-800 text-white rounded-xl text-center shadow-lg border border-gray-600"
-            style="min-height: 60px; padding: clamp(0.5rem, 1.5vh, 0.625rem) clamp(0.375rem, 1.5vw, 0.5rem)"
+            style="
+              min-height: 60px;
+              padding: clamp(0.5rem, 1.5vh, 0.625rem) clamp(0.375rem, 1.5vw, 0.5rem);
+            "
           >
             <div class="flex flex-col items-center justify-center gap-1">
-              <div class="flex items-center justify-center font-semibold" style="font-size: clamp(0.65rem, 1.3vh, 0.75rem)">
+              <div
+                class="flex items-center justify-center font-semibold"
+                style="font-size: clamp(0.65rem, 1.3vh, 0.75rem)"
+              >
                 <svg
                   style="width: clamp(13px, 3.5vw, 15px); height: clamp(13px, 3.5vw, 15px)"
                   viewBox="0 0 100 100"
@@ -113,24 +134,36 @@
                 </svg>
                 <span class="ml-1 text-gray-100 font-semibold">세트 시간</span>
               </div>
-              <div class="flex items-center justify-center text-orange-400 font-extrabold" style="font-size: clamp(0.75rem, 1.6vh, 0.9rem)">
+              <div
+                class="flex items-center justify-center text-orange-400 font-extrabold"
+                style="font-size: clamp(0.75rem, 1.6vh, 0.9rem)"
+              >
                 {{ limitTimeStr }}
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="w-full flex justify-end" style="margin-top: clamp(0.375rem, 1vh, 0.5rem); gap: clamp(0.375rem, 1vw, 0.5rem)">
+      <div
+        class="w-full flex justify-end"
+        style="margin-top: clamp(0.375rem, 1vh, 0.5rem); gap: clamp(0.375rem, 1vw, 0.5rem)"
+      >
         <button
           @click="showLogModal = true"
           class="bg-gradient-to-br from-gray-600 to-gray-700 text-white rounded-lg font-bold shadow-md hover:from-gray-700 hover:to-gray-800 hover:scale-105 transition-all duration-200"
-          style="padding: clamp(0.375rem, 1.2vh, 0.5rem) clamp(0.625rem, 2.5vw, 0.875rem); font-size: clamp(0.7rem, 2vw, 0.8rem)"
+          style="
+            padding: clamp(0.375rem, 1.2vh, 0.5rem) clamp(0.625rem, 2.5vw, 0.875rem);
+            font-size: clamp(0.7rem, 2vw, 0.8rem);
+          "
         >
           <i class="fas fa-list mr-1"></i>로그 보기
         </button>
         <button
           class="bg-gradient-to-br from-gray-600 to-gray-700 text-white rounded-lg font-bold shadow-md hover:from-gray-700 hover:to-gray-800 hover:scale-105 transition-all duration-200"
-          style="padding: clamp(0.375rem, 1.2vh, 0.5rem) clamp(0.625rem, 2.5vw, 0.875rem); font-size: clamp(0.7rem, 2vw, 0.8rem)"
+          style="
+            padding: clamp(0.375rem, 1.2vh, 0.5rem) clamp(0.625rem, 2.5vw, 0.875rem);
+            font-size: clamp(0.7rem, 2vw, 0.8rem);
+          "
           @click="game.showRuleDetail = true"
         >
           <i class="fas fa-book mr-1"></i>규칙 보기
@@ -143,7 +176,11 @@
         <div
           class="font-bold"
           style="font-size: clamp(1.125rem, 3vh, 1.5rem)"
-          :class="game.limitSeconds !== -1 && elapsedSeconds >= game.limitSeconds ? 'text-red-500 animate-pulse' : 'text-orange-400'"
+          :class="
+            game.limitSeconds !== -1 && elapsedSeconds >= game.limitSeconds
+              ? 'text-red-500 animate-pulse'
+              : 'text-orange-400'
+          "
         >
           {{ elapsedTimeStr }}, 세트 {{ currentSet }}
         </div>
@@ -156,7 +193,10 @@
       </div>
       <div class="flex w-full items-start justify-center">
         <div class="flex flex-col items-center justify-center w-full">
-          <div class="flex items-center justify-center w-full" style="margin-bottom: clamp(0.25rem, 1vh, 0.5rem)">
+          <div
+            class="flex items-center justify-center w-full"
+            style="margin-bottom: clamp(0.25rem, 1vh, 0.5rem)"
+          >
             <div class="flex items-end">
               <span
                 class="font-extrabold text-orange-500"
@@ -165,14 +205,20 @@
               >
               <span
                 class="font-bold text-orange-400"
-                style="position: relative; top: 0.1em; font-size: clamp(1.5rem, 4vh, 3rem); margin-left: clamp(0.25rem, 1vw, 0.5rem)"
+                style="
+                  position: relative;
+                  top: 0.1em;
+                  font-size: clamp(1.5rem, 4vh, 3rem);
+                  margin-left: clamp(0.25rem, 1vw, 0.5rem);
+                "
                 >{{ user1SetsWon }}</span
               >
             </div>
-            <div class="flex items-center" style="margin-left: clamp(0.5rem, 2vw, 1rem); margin-right: clamp(0.5rem, 2vw, 1rem)">
-              <span
-                class="font-bold text-orange-500"
-                style="font-size: clamp(2.5rem, 7vh, 5rem)"
+            <div
+              class="flex items-center"
+              style="margin-left: clamp(0.5rem, 2vw, 1rem); margin-right: clamp(0.5rem, 2vw, 1rem)"
+            >
+              <span class="font-bold text-orange-500" style="font-size: clamp(2.5rem, 7vh, 5rem)"
                 >:</span
               >
             </div>
@@ -184,20 +230,37 @@
               >
               <span
                 class="font-bold text-orange-400"
-                style="position: relative; top: 0.1em; font-size: clamp(1.5rem, 4vh, 3rem); margin-left: clamp(0.25rem, 1vw, 0.5rem)"
+                style="
+                  position: relative;
+                  top: 0.1em;
+                  font-size: clamp(1.5rem, 4vh, 3rem);
+                  margin-left: clamp(0.25rem, 1vw, 0.5rem);
+                "
                 >{{ user2SetsWon }}</span
               >
             </div>
           </div>
-          <div class="flex flex-row w-full justify-between" style="margin-top: clamp(0.25rem, 1vh, 0.5rem)">
+          <div
+            class="flex flex-row w-full justify-between"
+            style="margin-top: clamp(0.25rem, 1vh, 0.5rem)"
+          >
             <div class="flex flex-col items-center flex-1">
               <img
                 :src="user1.profileUrl ? user1.profileUrl : DefaultImage"
                 class="aspect-square object-cover rounded-full border-2 border-orange-500 shadow-lg"
-                style="width: clamp(44px, 12vh, 100px); height: clamp(44px, 12vh, 100px); margin-bottom: clamp(0.25rem, 1vh, 0.5rem)"
+                style="
+                  width: clamp(44px, 12vh, 100px);
+                  height: clamp(44px, 12vh, 100px);
+                  margin-bottom: clamp(0.25rem, 1vh, 0.5rem);
+                "
               />
-              <div class="font-bold mb-1" style="font-size: clamp(0.875rem, 2.5vh, 1.125rem)">{{ user1.nickname }}</div>
-              <div class="flex flex-col items-center w-full" style="gap: clamp(0.375rem, 1.5vh, 0.5rem); margin-top: clamp(0.25rem, 1vh, 0.5rem)">
+              <div class="font-bold mb-1" style="font-size: clamp(0.875rem, 2.5vh, 1.125rem)">
+                {{ user1.nickname }}
+              </div>
+              <div
+                class="flex flex-col items-center w-full"
+                style="gap: clamp(0.375rem, 1.5vh, 0.5rem); margin-top: clamp(0.25rem, 1vh, 0.5rem)"
+              >
                 <button
                   @click="socket_sendScore(1, 1)"
                   :disabled="isSetOver || isGameOver || isCountingDown"
@@ -230,10 +293,19 @@
               <img
                 :src="user2.profileUrl ? user2.profileUrl : DefaultImage"
                 class="aspect-square object-cover rounded-full border-2 border-orange-500 shadow-lg"
-                style="width: clamp(44px, 12vh, 100px); height: clamp(44px, 12vh, 100px); margin-bottom: clamp(0.25rem, 1vh, 0.5rem)"
+                style="
+                  width: clamp(44px, 12vh, 100px);
+                  height: clamp(44px, 12vh, 100px);
+                  margin-bottom: clamp(0.25rem, 1vh, 0.5rem);
+                "
               />
-              <div class="font-bold mb-1" style="font-size: clamp(0.875rem, 2.5vh, 1.125rem)">{{ user2.nickname }}</div>
-              <div class="flex flex-col items-center w-full" style="gap: clamp(0.375rem, 1.5vh, 0.5rem); margin-top: clamp(0.25rem, 1vh, 0.5rem)">
+              <div class="font-bold mb-1" style="font-size: clamp(0.875rem, 2.5vh, 1.125rem)">
+                {{ user2.nickname }}
+              </div>
+              <div
+                class="flex flex-col items-center w-full"
+                style="gap: clamp(0.375rem, 1.5vh, 0.5rem); margin-top: clamp(0.25rem, 1vh, 0.5rem)"
+              >
                 <button
                   @click="socket_sendScore(2, 1)"
                   :disabled="isSetOver || isGameOver || isCountingDown"
@@ -268,14 +340,20 @@
     </div>
 
     <!-- 하단 버튼 섹션 -->
-    <div class="flex-shrink-0 w-full flex flex-col items-stretch" style="gap: clamp(0.5rem, 1.5vh, 0.75rem)">
+    <div
+      class="flex-shrink-0 w-full flex flex-col items-stretch"
+      style="gap: clamp(0.5rem, 1.5vh, 0.75rem)"
+    >
       <!-- 세트 종료 버튼과 카메라 버튼들 -->
       <div class="flex items-center justify-between" style="gap: clamp(0.5rem, 1.5vw, 0.75rem)">
         <button
           v-if="!isSetOver && !isGameOver && !isCountingDown"
           @click="manualFinishSet"
           class="flex-1 bg-orange-600 text-white rounded-xl font-bold shadow-lg hover:brightness-110 transition"
-          style="padding: clamp(0.75rem, 2vh, 1rem) clamp(0.75rem, 2vw, 1rem); font-size: clamp(0.875rem, 2.5vh, 1.125rem)"
+          style="
+            padding: clamp(0.75rem, 2vh, 1rem) clamp(0.75rem, 2vw, 1rem);
+            font-size: clamp(0.875rem, 2.5vh, 1.125rem);
+          "
         >
           <i class="fas fa-flag-checkered mr-2"></i>세트 종료
         </button>
@@ -287,7 +365,7 @@
               'w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition',
               isCountingDown
                 ? 'bg-gray-700 text-gray-500 cursor-not-allowed opacity-50'
-                : 'bg-gradient-to-br from-orange-500 to-orange-600 text-white hover:scale-110'
+                : 'bg-gradient-to-br from-orange-500 to-orange-600 text-white hover:scale-110',
             ]"
             title="사진 촬영"
           >
@@ -300,7 +378,7 @@
               'w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition',
               isCountingDown
                 ? 'bg-gray-700 text-gray-500 cursor-not-allowed opacity-50'
-                : 'bg-gradient-to-br from-blue-500 to-blue-600 text-white hover:scale-110'
+                : 'bg-gradient-to-br from-blue-500 to-blue-600 text-white hover:scale-110',
             ]"
             title="동영상 촬영"
           >
@@ -313,34 +391,38 @@
         <button
           @click="openConfirm('정말로 게임을 재시작 하겠습니까?', socket_resetGame)"
           class="bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-xl font-bold shadow-lg hover:from-blue-600 hover:to-blue-700 hover:scale-105 transition-all duration-200"
-          style="padding: clamp(0.75rem, 2vh, 1rem) clamp(0.75rem, 2vw, 1rem); font-size: clamp(0.875rem, 2.5vh, 1.125rem)"
+          style="
+            padding: clamp(0.75rem, 2vh, 1rem) clamp(0.75rem, 2vw, 1rem);
+            font-size: clamp(0.875rem, 2.5vh, 1.125rem);
+          "
         >
           <i class="fas fa-redo mr-2"></i>처음부터
         </button>
         <button
           @click="openConfirm('정말로 게임을 즉시 종료합니까?', socket_finishGame)"
           class="bg-gradient-to-br from-red-500 to-red-600 text-white rounded-xl font-bold shadow-lg hover:from-red-600 hover:to-red-700 hover:scale-105 transition-all duration-200"
-          style="padding: clamp(0.75rem, 2vh, 1rem) clamp(0.75rem, 2vw, 1rem); font-size: clamp(0.875rem, 2.5vh, 1.125rem)"
+          style="
+            padding: clamp(0.75rem, 2vh, 1rem) clamp(0.75rem, 2vw, 1rem);
+            font-size: clamp(0.875rem, 2.5vh, 1.125rem);
+          "
         >
           <i class="fas fa-stop-circle mr-2"></i>경기 끝내기
         </button>
       </div>
       <!-- Google AdMob Style Banner -->
-      <div class="w-full flex justify-center mt-2 sm:mt-4 fixed bottom-0">
+      <!-- <div class="w-full flex justify-center mt-2 sm:mt-4 fixed bottom-0">
         <div
           class="w-full max-w-xs sm:max-w-md h-8 bg-white border border-gray-300 rounded-lg flex items-center shadow-sm mx-1 sm:mx-2 relative"
           style="box-sizing: border-box;"
         >
-          <!-- 광고 표시 -->
           <div class="absolute top-0 left-0 bg-gray-100 text-gray-500 text-[10px] px-1 py-0.5 rounded-tl-lg rounded-br-sm font-medium">
             광고
           </div>
-          <!-- 광고 내용 -->
           <div class="flex-1 flex items-center justify-center text-gray-700 text-xs font-medium">
             클래시오브클랜 <span class="text-orange-500 font-semibold">회원</span> 모집중!
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- 5초 카운트다운 오버레이 -->
@@ -355,9 +437,7 @@
         <div class="text-orange-500 text-[25vw] sm:text-[30vw] font-extrabold animate-countdown">
           {{ countdown }}
         </div>
-        <div class="text-gray-400 text-base sm:text-lg mt-4">
-          준비하세요!
-        </div>
+        <div class="text-gray-400 text-base sm:text-lg mt-4">준비하세요!</div>
       </div>
     </div>
 
@@ -365,9 +445,14 @@
       v-if="showStartButton"
       class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
     >
-      <div class="bg-gradient-to-b from-gray-700 to-gray-900 rounded-2xl p-8 flex justify-center items-center shadow-2xl w-[90%] max-w-md border border-gray-600">
+      <div
+        class="bg-gradient-to-b from-gray-700 to-gray-900 rounded-2xl p-8 flex justify-center items-center shadow-2xl w-[90%] max-w-md border border-gray-600"
+      >
         <button
-          @click="startSet(); showStartButton = false"
+          @click="
+            startSet()
+            showStartButton = false
+          "
           class="bg-gradient-to-r from-blue-500 to-blue-600 w-full min-w-[240px] sm:min-w-[320px] text-white px-8 py-4 rounded-full text-xl font-bold shadow-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-200 hover:scale-105 whitespace-nowrap"
         >
           1세트 시작
@@ -379,7 +464,9 @@
       v-if="isSetOver && !isGameOver"
       class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
     >
-      <div class="bg-gradient-to-b from-gray-700 to-gray-900 rounded-2xl p-8 flex justify-center items-center shadow-2xl w-[90%] max-w-md border border-gray-600">
+      <div
+        class="bg-gradient-to-b from-gray-700 to-gray-900 rounded-2xl p-8 flex justify-center items-center shadow-2xl w-[90%] max-w-md border border-gray-600"
+      >
         <button
           @click="socket_nextSet"
           class="bg-gradient-to-r from-orange-500 to-orange-600 w-full min-w-[240px] sm:min-w-[320px] text-white px-8 py-4 rounded-full text-xl font-bold shadow-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-200 hover:scale-105 whitespace-nowrap"
@@ -417,8 +504,6 @@
         </div>
       </div>
     </div>
-
-
   </div>
 
   <!-- 숨겨진 카메라 input -->
@@ -465,8 +550,6 @@
   </div>
 
   <CustomToast />
-
-
 </template>
 
 <script setup>
@@ -478,7 +561,12 @@ import DefaultImage from '../../assets/default.png'
 import MatchModal from '../../components/MatchModal.vue'
 import CustomToast from '../../components/CustomToast.vue'
 import { useToast } from '../../composable/useToast'
-import { addGamePicture, addGameVideo, compressImage, compressVideo } from '../../utils/gamePictureStorage'
+import {
+  addGamePicture,
+  addGameVideo,
+  compressImage,
+  compressVideo,
+} from '../../utils/gamePictureStorage'
 
 const route = useRoute()
 const router = useRouter()
@@ -666,7 +754,11 @@ function updateElapsed() {
   }
 
   // 시간 초과 알림
-  if (game.limitSeconds !== -1 && elapsedSeconds.value >= game.limitSeconds && !timeOverNotified.value) {
+  if (
+    game.limitSeconds !== -1 &&
+    elapsedSeconds.value >= game.limitSeconds &&
+    !timeOverNotified.value
+  ) {
     timeOverNotified.value = true
     // 진동
     if (navigator.vibrate) {
@@ -931,7 +1023,6 @@ function socket_resetGame() {
   })
 }
 
-
 // 안드로이드 웹뷰 감지
 function isAndroidWebView() {
   return window.AndroidApp !== undefined
@@ -939,8 +1030,10 @@ function isAndroidWebView() {
 
 function isIOSWebView() {
   const userAgent = navigator.userAgent.toLowerCase()
-  return userAgent.includes('raspy-ios') ||
-         (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.iosBridge)
+  return (
+    userAgent.includes('raspy-ios') ||
+    (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.iosBridge)
+  )
 }
 
 // 사진 촬영 트리거
@@ -960,7 +1053,7 @@ function triggerPhotoCapture() {
       console.log('Calling iOS native camera for photo...')
       window.webkit.messageHandlers.iosBridge.postMessage({
         action: 'openCamera',
-        type: 'photo'
+        type: 'photo',
       })
       // 콜백은 window.onGameCameraResult로 받음
     } catch (error) {
@@ -991,7 +1084,7 @@ function triggerVideoCapture() {
       console.log('Calling iOS native camera for video...')
       window.webkit.messageHandlers.iosBridge.postMessage({
         action: 'openCamera',
-        type: 'video'
+        type: 'video',
       })
       // 콜백은 window.onGameVideoCameraResult로 받음
     } catch (error) {
@@ -1004,7 +1097,6 @@ function triggerVideoCapture() {
     videoInputRef.value?.click()
   }
 }
-
 
 // 카메라 파일 선택 완료
 async function onCameraChange(e) {
